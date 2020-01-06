@@ -1,0 +1,24 @@
+/** css for cources_link Toolbox **/
+
+#postbox-container-1 #prk_metabox_cources_link th, 
+#postbox-container-1 #prk_metabox_cources_link td{ 
+	display: block;
+	padding: 0px;
+}
+
+
+/** css for Ссылка на страницу курсов **/
+#prk_postmeta_cources_page{ 
+	padding: 6px 12px;
+	height: 34px;
+	min-width: 75%;
+}
+/** left position **/
+#postbox-container-1 #prk_postmeta_cources_page{ 
+	width: 100%;
+}
+/** right position **/
+#postbox-container-2 #prk_postmeta_cources_page{ 
+	min-width:25em; 
+}
+
