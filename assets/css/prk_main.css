@@ -582,11 +582,24 @@ html, body {
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 660px;
-  max-height: 660px;
-  margin: 0 auto; }
-  .praktiki h4 {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .praktiki:before {
+    content: ' ';
     position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); }
+  .praktiki h4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -599,15 +612,14 @@ html, body {
     padding: 20px;
     color: #fff;
     line-height: 1.5;
-    background: rgba(0, 0, 0, 0.7);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     text-transform: uppercase;
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    z-index: 1; }
+    .praktiki h4 div {
+      max-width: 660px; }
 
 .credits {
   margin-bottom: 1em;
@@ -615,8 +627,17 @@ html, body {
   .credits small {
     font-size: 80%; }
 
+.btn-group, .btn-group-vertical {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em 1em 0; }
+
 .btn {
-  margin-bottom: 1em; }
+  margin: 0 1em 1em;
+  -webkit-box-flex: inherit !important;
+      -ms-flex: inherit !important;
+          flex: inherit !important; }
 
 .ya-share2 {
   margin-bottom: 0 !important; }
