@@ -72,13 +72,21 @@ class Praktiki_Widget extends WP_Widget {
 					padding: 1em;
 					height: 100%;
 					text-align: center;
-					background: -webkit-linear-gradient(to right, rgba(213, 88, 200, 0.7) 0%, rgba(36, 210, 146, 0.7) 100%), url('. $instance["praktki_img"] .') no-repeat center center; 
-					background: linear-gradient(to right, rgba(213, 88, 200, 0.7) 0%, rgba(36, 210, 146, 0.7) 100%), url('. $instance["praktki_img"] .') no-repeat center center;
+					background: url('. $instance["praktki_img"] .') no-repeat center center; 
 					background-size: cover;
+					position: relative;
+				}
+				.praktiki-widget:before {
+					content: " ";
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					background: rgba(0,0,0,0.4);
 				}
 				.praktiki-widget h3 {
 					color: #fff;
 					text-transform: uppercase;
+					z-index: 1;
 				}
 				</style>';
 				echo '<a href="'. $instance["praktiki_link"] .'" class="praktiki-widget">';

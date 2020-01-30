@@ -45,9 +45,9 @@ foreach($_praktikis as $_praktiki){
         }        
 
         $content .= '<div class="btn-group btn-group-sm" role="group" aria-label="Кнопки для практик">';
-        $content .= '<a href="' . get_permalink(get_the_ID()) . '" class="btn btn-success"  role="button">Попробовать другой вариант</a>';
-        $content .= '<a href="/" class="btn btn-success" role="button">Вернуться на главную</a> ';
-        $content .= '<a href="' . strip_tags(get_post_meta(get_the_ID(), '_prk_postmeta_cources_page', true)) . '" class="btn btn-success" role="button">Перейти к курсам</a> ';
+        $content .= '<a href="' . get_permalink(get_the_ID()) . '" class="btn btn-dark"  role="button">Попробовать другой вариант</a>';
+        $content .= '<a href="/" class="btn btn-dark" role="button">Вернуться на главную</a> ';
+        $content .= '<a href="' . strip_tags(get_post_meta(get_the_ID(), '_prk_postmeta_cources_page', true)) . '" class="btn btn-dark" role="button">Перейти к курсам</a> ';
         $content .= '</div>';
 
         $content .='</div>'; 
